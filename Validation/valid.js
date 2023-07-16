@@ -65,8 +65,8 @@ function validAge(Age)
     if(age >= 18) return true;
     else
     {
-        console.log("Invalid Age,Age should be at least 18 years old");
-        return false;
+        return("Invalid Age,Age should be at least 18 years old");
+      //  return false;
     }
 }
 function validGender(Gneder)
@@ -76,7 +76,7 @@ function validGender(Gneder)
         return true;
     else
     {
-        console.log("Invalid Gneder,Gender should be female or male with small letter");
+        return("Invalid Gneder,Gender should be female or male with small letter");
         return false;
     }
 }
@@ -84,11 +84,11 @@ function validFunction (FullName , Email , Password ,  Age , Gneder){
     
     if(validName(FullName) && validEmail(Email)  && validPassword(Password) && validAge(Age) && validGender(Gneder))
     {
-        console.log("Accepted Validation!!");
+        return("Accepted Validation!!");
     }
     else
     {
-        console.log('' + "Please try again!!");
+        return('' + "Please try again!!");
     }
     
    // console.log("hi");
